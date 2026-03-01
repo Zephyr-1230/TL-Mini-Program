@@ -1,0 +1,34 @@
+<!--pages/contact/contact.wxml-->
+<view class="contact">
+  <view><image mode="widthFix" src="/images/111.jpg"></image></view>
+  <view class="aboutUS">
+    <view><text class="title">工作室简介</text></view>
+    <view><text style="color: coral;">————</text></view>
+    <view><text class="content">TL是一个由在校大学生创立并运营的实战型软件工作室。我们不止是一个团队，更是一个技术变现、能力加速与项目实战的平台。在这里，你将告别空想，亲手将代码转化为有价值的、被真实用户使用的产品。我们直接面向市场，承接并交付真实的软件项目。\n\n核心业务包括：全栈开发：网站、小程序、管理系统的定制开发。\n\n我们的技术栈与经验在实战中，我们已积累并跑通了以下核心开发流程与模块：\n\n后端/架构：支付模块、异步并发接口、对象存储服务。\n\n运维/部署：Jenkins自动化部署、日志系统搭建、测试环境配置。\n\n我们在寻找这样的你,我们希望与以下同学同行：\n\n技术实干家：具备或渴望学习前端、后端、爬虫等任一方向技能。\n\n责任驱动者：对代码和交付负责，有始有终。\n\n需求洞察者：不止会执行，更能发现痛点、提出解决方</text></view>
+  </view>
+  <view class="contactUS">
+    <view><text class="title">联系我们</text></view>
+    <view class="list" bindtap="ditu">
+      <view class="listImage"><image src="/images/dingwei.png"></image></view>
+      <view class="listInfo"><text class="listTitle">工作室地址</text><text>南京邮电大学仙林校区</text></view>
+    </view>
+    <view class="list">
+      <view class="listImage"><image src="/images/dianhua.png"></image></view>
+      <view class="listInfo">
+        <text class="listTitle">联系电话</text>
+        <text bindtap="copyText" data-key="18232578077">180xxxx7374</text>
+        <text bindtap="copyText" data-key="15369985550">180xxxx4834</text>
+      </view>
+    </view>
+    <view class="list">
+      <view class="listImage"><image src="/images/kefu.png"></image></view>
+      <view class="listInfo"><text class="listTitle">在线客服</text>
+      <button style="font-size: 30rpx;" type="primary" size="mini" open-type="contact" bindcontact="handleContact" session-from="sessionFrom">点击聊天</button></view>
+    </view>
+  </view>
+  <view class="bottom">
+    <text>版权所有 @ 南邮TL工作室
+    信达天下 自强不息
+    送给所有战邮英雄！</text>
+  </view>
+</view>

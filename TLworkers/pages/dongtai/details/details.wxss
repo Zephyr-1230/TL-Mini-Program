@@ -1,0 +1,30 @@
+/* pages/dongtai/details/details.wxss */
+page{
+  background-color: #fff;
+}
+.details{
+  margin: 25rpx 20rpx;
+  padding: 15rpx;
+}
+.title{
+  text-align: center;
+  font-size: 45rpx;
+  font-weight: bold;
+}
+.date{
+  margin: 20rpx 0rpx;
+  font-size: 30rpx;
+  color:darkgray;
+}
+.image{
+  margin: 40rpx 0rpx;
+  border-radius: 20rpx;
+}
+.image image{
+  width: 100%;
+}
+.content{
+  margin: 20rpx 0rpx;
+  font-size: 30rpx;
+  line-height: 45rpx;
+}

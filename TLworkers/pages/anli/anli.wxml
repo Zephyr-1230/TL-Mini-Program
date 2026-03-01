@@ -1,0 +1,80 @@
+<!--pages/anli/anli.wxml-->
+<view>
+  <view class="topSwiper">
+    <view class="notice-swiper" style="height:300rpx">
+      <view class="notice-position" style="top:-{{move}}px">
+        <view class="notice-for" wx:for="{{lineArray}}" wx:key="index" data-index="{{index}}">
+          <view class="notice-item-root-container">
+            <view class="notice-item-container">
+              <block wx:for="{{item}}" wx:key="index" data-index="{{index}}" wx:for-item="innerItem">
+                <view class="notice-line-item-container" style="color:{{innerItem.color}}">
+                  <view class="notice-line-item">{{innerItem.value}}</view>
+                </view>
+              </block>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="content">
+      <view class='left'>
+        <view class="{{flag==0?'select':'normal'}}" id='0' bindtap='switchNav'>优秀案例</view>
+        <view class="{{flag==1?'select':'normal'}}" id='1' bindtap='switchNav'>全部案例</view>
+      </view>
+      <view class='right'>
+        <view class='category'>
+          <swiper current='{{currentTab}}' style='height:1000rpx' vertical="{{true}}">
+            <swiper-item class="swiper-item" id='0' catchtouchmove="stopTouchMove">
+              <view class="anliItem" wx:for="{{youxiu}}">
+                <view class="anliTitle">{{item.title}}</view>
+                <view class="anliContent">{{item.content}}</view>
+              </view>
+            </swiper-item>
+            <swiper-item id='1' catchtouchmove="stopTouchMove">
+              专家B
+            </swiper-item>
+          </swiper>
+        </view>
+      </view>
+  </view> -->
+  <view class="container">
+    <scroll-view class='nav_left' scroll-y='true'>
+      <!-- <block>
+        <view class="nav_left_items {{flag==0?'active':''}}" id='0' bindtap='switchNav'>优秀案例</view>
+        <view class="nav_left_items {{flag==1?'active':''}}" id='1' bindtap='switchNav'>全部案例</view>
+      </block> -->
+      <block>
+        <view class="nav_left_items {{curNav==1?'active':''}}" bindtap="switchRightTab" data-index='0' data-id="1">优秀案例</view>
+        <view class="nav_left_items {{curNav==2?'active':''}}" bindtap="switchRightTab" data-index='1' data-id="2">全部案例</view>
+      </block>
+    </scroll-view>
+    <scroll-view class="nav_right" scroll-y="true">
+      <view wx:if="{{curNav==1}}">
+        <block wx:for="{{youxiu}}">
+          <view class="anliItem">
+            <view class="anliTitle">{{item.title}}</view>
+            <view class="anliContent">{{item.content}}</view>
+          </view>
+        </block>
+      </view>
+      <view wx:if="{{curNav==2}}">
+        <block wx:for="{{quanbu}}">
+          <view class="anliItem">
+            <view class="anliTitle">{{item.title}}</view>
+            <view class="anliContent">{{item.content}}</view>
+          </view>
+        </block>
+      </view>
+       
+    </scroll-view>
+    <!-- <scroll-view class="nav_right" scroll-y="true" id='1'>
+      <block wx:for="{{youxiu}}">
+        <view class="anliItem">
+          <view class="anliTitle">{{item.title}}</view>
+          <view class="anliContent">{{item.content}}</view>
+        </view>
+      </block>
+    </scroll-view> -->
+  </view>
+</view>

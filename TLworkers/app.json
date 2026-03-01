@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/contact/contact",
+    "pages/fuwu/fuwu",
+    "pages/dongtai/dongtai",
+    "pages/dongtai/details/details",
+    "pages/anli/anli",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "企业门户",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#efefef"
+  },
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png"
+    },{
+      "pagePath": "pages/anli/anli",
+      "text": "案例展示",
+      "iconPath": "images/anli.png",
+      "selectedIconPath": "images/anli-active.png"
+  },{
+      "pagePath": "pages/contact/contact",
+      "text": "联系我们",
+      "iconPath": "images/contact.png",
+      "selectedIconPath": "images/contact-active.png"
+  }]
+},
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

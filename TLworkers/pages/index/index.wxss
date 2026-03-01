@@ -1,0 +1,244 @@
+/**index.wxss**/
+.title{
+  font-weight: bold;
+}
+.swiper{
+  height: 320rpx;
+  position: absolute;
+  width: 100%;
+}
+.swiper image{
+  width: 100%;
+  height: 100%;
+}
+.yewu{
+  display: flex;
+  margin: 0rpx 20rpx;
+  justify-content: space-around;
+  margin-top: 320rpx;
+}
+.yewuItem{
+  width: 20%;
+  height: 100%;
+  text-align: center;
+}
+.yewuItemText{
+    font-size: 25rpx;
+}
+.yewuItemImage image{
+  width: 100%;
+}
+.fuwu{
+  margin: 25rpx 20rpx;
+  padding: 15rpx;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20rpx;
+  justify-content: space-around;
+}
+.fuwuImage{
+  display: flex;
+  margin: 20rpx 0rpx;
+  justify-content: space-around;
+}
+.fuwuItem{
+  width: 30%;
+  height: 100%;
+}
+.fuwuItem image{
+  width: 100%;
+}
+.img{
+    display: flex;
+    margin: 25rpx 20rpx;
+    justify-content: space-around;
+}
+.img image{
+    width: 100%;
+}
+.chengnuo{
+  margin: 0rpx 20rpx;
+  padding: 15rpx;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20rpx;
+  justify-content: space-around;
+  /* background: url('https://pic.616pic.com/bg_w1180/00/12/81/UpDdiaA6lC.jpg'); */
+  background: url('https://img2.baidu.com/it/u=3720426993,1815996651&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=707');
+  background-size: 100%;
+}
+.chengguoImg{
+  margin: 15rpx;
+}
+.chengnuoInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0rpx 30rpx 0rpx 20rpx;
+  font-size: 30rpx;
+}
+.huilang{
+    /* display: flex; */
+    margin: 0rpx 20rpx;
+    /* justify-content: space-around; */
+}
+.huilangItem{
+    width: 35%;
+    margin: 10rpx;
+    display: inline-block;
+    vertical-align: top;
+}
+.huilangItem image{
+    display: block; 
+    width: 100%;
+    height: 300rpx
+}
+.scroll-view_H{
+    white-space: nowrap;
+}
+
+.liucheng{
+  display: flex;
+  margin: 25rpx 20rpx;
+  justify-content: space-around;
+}
+.liucheng image{
+  width: 100%;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.usermotto {
+  margin-top: 200px;
+}
+.dongtai{
+  margin: 25rpx 20rpx;
+  padding: 15rpx;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20rpx;
+  justify-content: space-around;
+}
+.dongtaiItem{
+  display: flex;
+  margin: 20rpx 0rpx;
+  align-items: center;
+}
+.dongtaiImg image{
+  width: 250rpx;
+  height: 250rpx;
+  display: block;
+  margin-right: 15rpx;
+}
+.dongtaiInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0rpx 10rpx;
+  font-size: 26rpx;
+}
+.dongtaiTitle{
+  font-weight: bold;
+}
+.dongtaiContent{
+  margin: 5rpx 0rpx;
+}
+
+.topSwiper{
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  width: 100%;
+}
+.notice-swiper {
+  width: 30%;
+  height: fit-content;
+  float: right;
+  overflow: hidden;
+  position: relative;
+}
+.notice-position {
+  width: 100%;
+  float: left;
+  position: absolute;
+}
+.notice-for {
+  width: 100%;
+  float: left;
+  height: 25px;
+}
+.notice-item-root-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 25px;
+}
+.notice-item-container {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+}
+.notice-line-item-container {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  max-lines: 1;
+  white-space: nowrap;
+  justify-content:center;
+}
+.notice-line-item{
+  margin-left: 6rpx;
+  margin-right: 6rpx;
+  font-size: 20rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  text-align: right;
+  color: #fff;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  overflow: hidden;
+  line-height: 20rpx;
+  max-lines: 1;
+  white-space: nowrap;
+}
+.dianhua{
+  position: fixed;
+  width: 80rpx;
+  right: 10rpx;
+  top: 70%;
+}
+.dianhua image{
+  width: 100%;
+}
+.kefu{
+  position: fixed;
+  width: 80rpx;
+  right: 10rpx;
+  top: 80%;
+}
+.kefu image{
+  width: 100%;
+}
+.bottom{
+  margin: 20rpx;
+  font-size: 25rpx;
+  text-align: center;
+  color: #aaa;
+}

@@ -1,0 +1,53 @@
+/* pages/contact/contact.wxss */
+.contact image{
+  width: 100%;
+}
+.aboutUS{
+  background-color:#fff;
+  border: 1px solid #eee;
+  margin: 15rpx 15rpx 15rpx 15rpx;
+  padding: 35rpx;
+  border-radius: 30rpx;
+  justify-content: space-around;
+  z-index:20;
+  
+}
+.title{
+  font-size: 40rpx;
+}
+.content{
+  font-size: 32rpx;
+}
+.contactUS{
+  margin: 15rpx;
+  padding: 35rpx;
+  border-radius: 3rpx;
+  justify-content: space-around;
+  
+}
+.list{
+  margin: 15rpx 0rpx;
+  display: flex;
+  align-items: center;
+}
+.list image{
+  width: 60rpx;
+  height: 60rpx;
+  display: block;
+  margin-right: 15rpx;
+}
+.listInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.listTitle{
+  font-size: 30rpx;
+  margin: 5rpx 0rpx;
+}
+.bottom{
+  margin: 20rpx;
+  font-size: 25rpx;
+  text-align: center;
+  color: #aaa;
+}

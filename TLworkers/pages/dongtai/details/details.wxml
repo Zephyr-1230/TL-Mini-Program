@@ -1,0 +1,7 @@
+<!--pages/dongtai/details/details.wxml-->
+<view class="details">
+  <view class="title">{{list[id].title}}</view>
+  <view class="date">{{list[id].date}}</view>
+  <view class="image"><image mode="widthFix" src="{{list[id].image}}"></image></view>
+  <view class="content"><text>{{list[id].content}}</text></view>
+</view>

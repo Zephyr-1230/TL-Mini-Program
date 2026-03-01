@@ -1,0 +1,11 @@
+<view>
+  <view class="image"><image src="{{list[id].image}}"></image></view>
+  <view class="info">
+    <view class="infoItem" wx:for="{{list[id].count}}">
+      <text>{{item}}</text>
+    </view>
+  </view>
+  <view class="note">
+    <text>我们根据项目分类，匹配了专业的团队和负责人，并拥有全方位的服务标准与质量。</text>
+  </view>
+</view>

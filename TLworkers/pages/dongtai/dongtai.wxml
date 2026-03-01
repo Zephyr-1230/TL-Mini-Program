@@ -1,0 +1,13 @@
+<!--pages/dongtai/dongtai.wxml-->
+<view>
+  <view class="dongtai" wx:for="{{list}}">
+    <view class="dongtaiItem" bind:tap="clickdongtai" data-num="{{index}}">
+      <view class="dongtaiImg"><image mode="widthFix" src="{{item.image}}"></image></view>
+      <view class="dongtaiInfo">
+          <text class="dongtaiTitle">{{item.title}}</text>
+          <text class="dongtaiContent">{{item.content}}</text>
+          <text>{{item.date}}</text>
+      </view>
+    </view>
+  </view>
+</view>

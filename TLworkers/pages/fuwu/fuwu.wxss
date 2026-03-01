@@ -1,0 +1,24 @@
+.image{
+  height: 400rpx;
+}
+.image image{
+  width: 100%;
+  height: 100%;
+}
+.info{
+  margin: 25rpx 20rpx;
+  padding: 15rpx;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20rpx;
+  align-items: center;
+  text-align: center;
+}
+.infoItem{
+  margin: 25rpx 0rpx;
+}
+.note{
+  margin: 25rpx 20rpx;
+  padding: 15rpx;
+  color:darkgray;
+}

@@ -1,0 +1,32 @@
+/* pages/dongtai/dongtai.wxss */
+.dongtai{
+  margin: 25rpx 20rpx;
+  padding: 15rpx;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20rpx;
+  justify-content: space-around;
+}
+.dongtaiItem{
+  display: flex;
+  margin: 20rpx 0rpx;
+  align-items: center;
+}
+.dongtaiImg image{
+  width: 250rpx;
+  height: 250rpx;
+  display: block;
+  margin-right: 15rpx;
+}
+.dongtaiInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 28rpx;
+}
+.dongtaiTitle{
+  font-weight: bold;
+}
+.dongtaiContent{
+  margin: 5rpx 0rpx;
+}

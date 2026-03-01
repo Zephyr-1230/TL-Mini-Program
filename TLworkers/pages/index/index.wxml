@@ -1,0 +1,136 @@
+<!--index.wxml-->
+<view>
+  <view class="topSwiper">
+    <view class="swiper">
+      <swiper  indicator-dots autoplay="true">
+        <swiper-item>
+            <image src="/images/head.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="/images/head1.jpg"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <!-- <view class="notice-swiper" style="height:{{lineArray.length*25}}px"> -->
+    <view class="notice-swiper" style="height:120rpx">
+      <view class="notice-position" style="top:-{{move}}px">
+        <view class="notice-for" wx:for="{{lineArray}}" wx:key="index" data-index="{{index}}">
+          <view class="notice-item-root-container">
+            <view class="notice-item-container">
+              <block wx:for="{{item}}" wx:key="index" data-index="{{index}}" wx:for-item="innerItem">
+                <view class="notice-line-item-container" style="color:{{innerItem.color}}">
+                  <view class="notice-line-item">{{innerItem.value}}</view>
+                </view>
+              </block>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="yewu">
+    <view class="yewuItem">
+      <view class="yewuItemImage"><image mode="widthFix" src="/images/icon-1.png" class="yewuImage"></image></view>
+      <view>
+        <text class="yewuItemText" >承接项目</text>
+      </view>
+    </view>
+    <view class="yewuItem">
+      <view  class="yewuItemImage"><image mode="widthFix" src="/images/icon-4.png" class="yewuImage"></image></view>
+      <view><text class="yewuItemText">问题咨询</text></view>
+    </view>
+  </view>
+  <view class="fuwu">
+    <view class="title"><text>服务范围</text></view>
+    <view class="fuwuImage">
+      <view class="fuwuItem" bind:tap="clickfuwu" data-num="0"><image mode="widthFix" src="/images/fuwu.png"></image></view>
+      <view class="fuwuItem" bind:tap="clickfuwu" data-num="1"><image mode="widthFix" src="/images/fuwu1.png"></image></view>
+      <view class="fuwuItem" bind:tap="clickfuwu" data-num="2"><image mode="widthFix" src="/images/fuwu2.png"></image></view>
+    </view>
+  </view>
+  <view class="chengnuo">
+    <view class="title"><text>服务保障及承诺</text></view>
+    <view class="dongtaiItem">
+      <view class="chengguoImg"><icon class="icon-box-img" type="success" size="43"></icon></view>
+      <view class="chengnuoInfo">
+          <text class="dongtaiTitle">严格按规定时间交作品</text>
+          <text class="dongtaiContent">按双方协商确定的时间按时交作品，若我方原因不能按时交作品可退款。</text>
+      </view>
+    </view>
+    <view class="dongtaiItem">
+      <view class="chengguoImg"><icon class="icon-box-img" type="success" size="43"></icon></view>
+      <view class="chengnuoInfo">
+          <text class="dongtaiTitle">同一作品客户专属</text>
+          <text class="dongtaiContent">我们承诺同一份作品，只为一家客户服务。</text>
+      </view>
+    </view>
+    <view class="dongtaiItem">
+      <view class="chengguoImg"><icon class="icon-box-img" type="success" size="43"></icon></view>
+      <view class="chengnuoInfo">
+          <text class="dongtaiTitle">沟通与协同</text>
+          <text class="dongtaiContent">认真听取客户要求，定期汇报进度，实时更新任务状态，关键决策留存书面记录。</text>
+      </view>
+    </view>
+    <view class="dongtaiItem">
+      <view class="chengguoImg"><icon class="icon-box-img" type="success" size="43"></icon></view>
+      <view class="chengnuoInfo">
+          <text class="dongtaiTitle">专属项目团队</text>
+          <text class="dongtaiContent">配备固定项目经理、技术负责人与客户对接，确保需求响应一致性。</text>
+      </view>
+    </view>
+  </view>
+  <view class="huilang">
+    <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%" scroll-with-animation="true">
+         <view class="huilangItem"><image mode="scaleToFill" src="/images/hl.jpg"></image></view>
+         <view class="huilangItem"><image mode="scaleToFill" src="/images/hl1.jpg"></image></view>
+         <view class="huilangItem"><image mode="scaleToFill" src="/images/hl2.jpg"></image></view>
+         <view class="huilangItem"><image mode="scaleToFill" src="/images/hl3.jpg"></image></view>
+         <view class="huilangItem"><image mode="scaleToFill" src="/images/hl4.jpg"></image></view>
+         <view class="huilangItem"><image mode="scaleToFill" src="/images/hl5.jpg"></image></view>
+     </scroll-view>
+  </view>
+  <view class="liucheng">
+    <image mode="widthFix" src="/images/lc.png"></image>
+  </view>
+  <view class="dongtai">
+    <view class="title"><text>最新动态</text><text style="float: right;font-size: 30rpx;font-weight: 400;" bind:tap="dongtaiall">更多>></text></view>
+    <view class="dongtaiItem" bind:tap="clickdongtai" data-num="0">
+      <view class="dongtaiImg"><image mode="widthFix" src="/images/dongtai.png"></image></view>
+      <view class="dongtaiInfo">
+          <text class="dongtaiTitle">《从日均超时 2000 次到秒级响应：一个老旧 ERP 系统的高可用改造实录》</text>
+          <text class="dongtaiContent">三年前，公司的核心 ERP 系统日均接口超时高达 2000 次以上，高峰时段响应时间长达 30 秒...</text>
+          <text>2026年1月17日</text>
+      </view>
+    </view>
+    <view class="dongtaiItem">
+      <view>———————————————————</view>
+    </view>
+    <view class="dongtaiItem" bind:tap="clickdongtai" data-num="1">
+      <view class="dongtaiImg"><image mode="widthFix" src="/images/dongtai.png"></image></view>
+      <view class="dongtaiInfo">
+          <text class="dongtaiTitle">《从 CRUD 到系统架构师：这 3 个思维模型彻底改变了我的编码逻辑》</text>
+          <text class="dongtaiContent">在经历了多年“增删改查”的重复工作后，我一度陷入技术成长的瓶颈期...</text>
+          <text>2026年1月17日</text>
+      </view>
+    </view>
+    <view class="dongtaiItem">
+      <view>———————————————————</view>
+    </view>
+    <view class="dongtaiItem" bind:tap="clickdongtai" data-num="2">
+      <view class="dongtaiImg"><image mode="widthFix" src="/images/dongtai.png"></image></view>
+      <view class="dongtaiInfo">
+          <text class="dongtaiTitle">《2025 年技术雷达：被过度炒作的 AI 编程，真能取代中级开发者吗？》</text>
+          <text class="dongtaiContent">2025年，以ChatGPT、Grok、Claude为代表的AI编码助手已渗透进半数技术团队...</text>
+          <text>2026年1月17日</text>
+      </view>
+    </view>
+  </view>
+  
+  <view class="bottom">
+    <text>版权所有 @ 2025-2026 123</text>
+  </view>
+</view>
+<view class="dianhua" bindtap="copyText" data-key="15369985550"><image mode="widthFix" src="/images/dianhua.png"></image></view>
+<view class="kefu"><image mode="widthFix" src="/images/kefu.png"></image></view>
+<view class="kefu"><button style="height: 80rpx;z-index: 20;background-color: transparent;" open-type="contact" bindcontact="handleContact" session-from="sessionFrom"></button></view>
+
